@@ -1,0 +1,12 @@
+# USUARIOS
+
+GET     /usuarios                   controllers.Usuarios.index()
+GET     /usuario/:id                controllers.Usuarios.retrieve(id: Long)
+POST    /usuario       				controllers.Usuarios.create()
+PUT     /usuario/:id                controllers.Usuarios.update(id: Long)
+DELETE  /usuario/:id                controllers.Usuarios.delete(id: Long)
+
+# URLS
+
+POST    /usuario/:id/url            controllers.Urls.create(id: Long)
+GET     /usuario/:nombre/urls       controllers.Usuarios.urls(nombre: String)

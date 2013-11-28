@@ -1,0 +1,6 @@
+@(urls: List[Url])
+[
+@for(u <- urls) {
+	@_url(u)
+}
+]

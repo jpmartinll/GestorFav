@@ -1,0 +1,6 @@
+@(usuario: Usuario)
+<hypermedia>
+	<retrieve>@routes.Usuarios.retrieve(usuario.id)</retrieve>
+	<update>@routes.Usuarios.update(usuario.id)</update>
+	<delete>@routes.Usuarios.delete(usuario.id)</delete>
+</hypermedia>

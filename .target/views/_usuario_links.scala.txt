@@ -1,0 +1,6 @@
+@(usuario: Usuario)
+"hypermedia": {
+	"retrieve": "@routes.Usuarios.retrieve(usuario.id)",
+	"update": "@routes.Usuarios.update(usuario.id)",
+	"delete": "@routes.Usuarios.delete(usuario.id)"
+}

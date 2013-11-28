@@ -1,0 +1,6 @@
+@(usuarios: List[Usuario])
+[
+@for(u <- usuarios) {
+	@_usuario(u)
+}
+]

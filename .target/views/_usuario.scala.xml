@@ -1,0 +1,5 @@
+@(usuario: Usuario)
+<usuario id="@usuario.id">
+	<nombre>@usuario.nombre</nombre>
+	@_usuario_links(usuario)
+</usuario>
